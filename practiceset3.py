@@ -1,14 +1,14 @@
 # write a pg to display a user entered name followed by good afternoon
-# Name=input("Enter your Name :")
-# print("Good Afternoon",Name)
+Name=input("Enter your Name :")
+print("Good Afternoon",Name)
 
 #write a pg to hill in a letter template given below with name and data
 
-# Name =input("Enter your name :")
-# Date=input("Enter Date")
+Name =input("Enter your name :")
+Date=input("Enter Date")
 
-# letter=f"Dear {Name},\n you are selected!\n{Date}" 
-# print(letter)
+letter=f"Dear {Name},\n you are selected!\n{Date}" 
+print(letter)
 
 #write a pg to detect double spaces in string
 # string="This is a   test String "
@@ -38,3 +38,5 @@ elif(hour>=12 and hour<17):
     print("Good Afternoon sir")
 elif(hour>=17 and hour<0):
     print("Good Night Sir")
+
+

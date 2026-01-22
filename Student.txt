@@ -1,0 +1,4 @@
+Amit,20,Delhi
+Neha,22,Mumbai
+Rahul,19,Kolkata
+Priya,21,Chennai

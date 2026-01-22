@@ -36,7 +36,7 @@
 
 # create a pg to displaying question like to the user like kbc use list to store the questions and their correct answers display the final amount the person is taking home after playing the game
 Questions =[ ["Capital of Bihar?", "A. Mumbai", "B. Patna", "C. West Champaran", "B", 700],
-    ["5 + 7 = ?", "A. 12", "B. 10", "C. 11", "A", 800],
+    ["5 + 7 = ?", "A. 12", "B. 10", "C. 11", "A", 800],                                     
 ["Founder of Python?","A.Guido Van Rossum","B.James gosling","C.Sarfraz","A",2000]]
 total_amount=0
 

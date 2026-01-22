@@ -44,3 +44,15 @@ print(union)
 print(intersection)
 print(difference)
 
+# weite a pg to find all unique charcters in string using set
+input_string={"Hello world"}
+unique_charcters = set(input_string)
+print("unique cahrcters:",unique_charcters)
+
+#givw=en a two list of students (cricket and football),find who play both sports
+
+cricket={'alice','aman','abhishek','shivam'}
+
+football={'alice','aman','rishi','amandeep'}
+both_sports=cricket.union(football)
+print(both_sports)

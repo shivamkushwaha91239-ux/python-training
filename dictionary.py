@@ -1,21 +1,21 @@
-# Student={
-#     "name": "Shivam",
-#     "age": 21,
-#     "courses": ["Math", "Computer Science", "Art", "History", "Biology"],
-#     "address": {
-#         "street": "Tiwari Ganj utthardhona",
-#         "city": "lucknow",
-#         "state": "UP",
-#         "zip": "226028"
-#     }
-# }
-# print(Student.get("email"))
-# print(Student["name"])
-# print(Student["age"])   
-# print(Student["courses"])
-# print(Student["address"]["city"])
-# Student["phone"]="9120379339"
-# print(Student)
+Student={
+    "name": "Shivam",
+    "age": 21,
+    "courses": ["Math", "Computer Science", "Art", "History", "Biology"],
+    "address": {
+        "street": "Tiwari Ganj utthardhona",
+        "city": "lucknow",
+        "state": "UP",
+        "zip": "226028"
+    }
+}
+print(Student.get("email"))
+print(Student["name"])
+print(Student["age"])   
+print(Student["courses"])
+print(Student["address"]["city"])
+Student["phone"]="9120379339"
+print(Student)
 
 
 
@@ -29,20 +29,19 @@ countries_capitals={
 }
 print(countries_capitals)
 # #access the capital of india from dictionary
-# print("Capital of India :",countries_capitals["India"])
+print("Capital of India :",countries_capitals["India"])
 
 # #add a new key value pair nepal:katmandu to dictionary
-# countries_capitals["nepal"]="Katmandu"
-# print(countries_capitals)           
+countries_capitals["nepal"]="Katmandu"
+print(countries_capitals)           
 
 # #updATE the capital of USA FROM washington D.C TO NEW YORK
-# countries_capitals["USA"]="New York"
-# print(countries_capitals)
+countries_capitals["USA"]="New York"
+print(countries_capitals)
 
 # #delete the key value pair of germany using del keyword
-# del countries_capitals["Germany"]   
-# print(countries_capitals)
-
+del countries_capitals["Germany"]   
+print(countries_capitals)
 #create a dictionary of of students and their marks.using keys() to print all students 
 students_marks={
     "Shivam":85,
@@ -54,12 +53,46 @@ students_marks={
 for student in students_marks.keys():
     print("Student Name:",student)  
 
-    
+# using values() to print all marks
+for marks in students_marks.values():
+    print("Marks:",marks)
 
-#copying
-#create a dictionary,make a copy using .copy() and update the copy without affecting original dictionary
-original_dict={"Sanoj":23,"Abhishek":45,"Rishi":34}
-copied_dict=original_dict.copy()
-copied_dict["Amandeep"]=48
-print("Original Dictionary:",original_dict)
-print("Copied Dictionary:",copied_dict)
+# # #removing elements
+#use .pop() to remove france from dictionary
+countries_capitals.pop("France")
+print(countries_capitals)
+
+# #try popping a non existing key using pop() with default value
+# removed_value=countries_capitals.pop("Italy","Not Found")
+# print(removed_value)
+
+# #use .clear() to remove all elements from dictionary
+# countries_capitals.clear()
+# print(countries_capitals)
+
+
+# #copying
+# #create a dictionary,make a copy using .copy() and update the copy without affecting original dictionary
+# original_dict={"Sanoj":23,"Abhishek":45,"Rishi":34}
+# copied_dict=original_dict.copy()
+# copied_dict["Amandeep"]=48
+# print("Original Dictionary:",original_dict)
+# print("Copied Dictionary:",copied_dict)
+
+#applications
+# count the frequency of words in a sentence using dictionary
+sentence="This is a test sentence This sentence is for test"
+words=sentence.split()                          
+word_frequency={}
+for word in words:
+    if word in word_frequency:
+        word_frequency[word] += 1
+    else:
+        word_frequency[word] = 1
+print("Word Frequency:",word_frequency)     
+
+
+
+
+
+
